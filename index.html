@@ -1,0 +1,569 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio do Vinnicius Correia</title>
+  <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles/reset.css" />
+  <link rel="stylesheet" href="styles/root.css" />
+  <link rel="stylesheet" href="styles/main.css" />
+  <link rel="stylesheet" href="styles/about-me.css" />
+  <link rel="stylesheet" href="styles/education.css" />
+  <link rel="stylesheet" href="styles/portfolio.css" />
+  <link rel="stylesheet" href="styles/contact.css" />
+  <link rel="stylesheet" href="styles/font.css" />
+  <script src="script.js" defer></script>
+</head>
+
+</html>
+
+<body class="container">
+  <header>
+    <!-- barra de navegaçao, sempre estará exposta ao usuário -->
+    <nav class="navbar flex gap-x-default align-items-center justify-between">
+      <a href="#hero" class="logo-link">
+        <img src="assets/logo.svg" alt="Logo" class="logo" />
+      </a>
+
+      <ul class="flex gap-x-default align-items-center justify-end">
+        <li class="nav-item">
+          <a href="#about-me">
+            Sobre Mim
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#education">
+            Formação
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#portfolio">
+            Portfólio
+          </a>
+        </li>
+
+        <li class="nav-item">
+          <a href="#contact">
+            Contato
+          </a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <main class="flex-col gap-y-5svh">
+    <section id="hero" class="flex-col align-items-center justify-center">
+      <!-- uso do article já que poderia ser um componente reutilizável em qualquer lugar da aplicaçao, tem seu sentido por sí só -->
+      <article class="flex-col">
+        <p class="font-size-1rem font-weight-400 font-color-primary">Olá, eu sou o</p>
+        <h1 class="font-size-4rem font-weight-700 font-color-primary">Vinnicius Correia</h1>
+        <p class="font-size-1rem font-weight-400 font-color-highlight">Um desenvolvedor web apaixonado por criar
+          experiências digitais incríveis.</p>
+      </article>
+    </section>
+
+    <section id="about-me" class="flex-col justify-center">
+      <div class="flex gap-x-2default">
+        <!-- uso do aside já que vamos colocar uma imagem à esquerda do article principal dessa section -->
+        <aside>
+          <img src="assets/profile.jpg" alt="Foto de Vinnicius Correia" class="profile-image" />
+        </aside>
+        <div class="flex-col gap-y-2default">
+          <article class="flex-col gap-y-default">
+            <h2>Sobre Mim</h2>
+            <p>Sou um Engenheiro Frontend Sênior com experiência em TypeScript, HTML, CSS e React. Adoro aprender novas
+              tecnologias e estou sempre em busca de desafios que me permitam crescer profissionalmente.</p>
+            <p>Quando não estou codificando, gosto de assistir vídeos sobre tecnologia, finanças e animes.</p>
+          </article>
+          <article class="flex-col gap-y-default">
+            <h3>Habilidades</h3>
+            <ul class="skills-list flex gap-x-default flex-wrap">
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                  class="skill-icon" />
+                <span>React</span>
+              </li>
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript" class="skill-icon" />
+                <span>TypeScript</span>
+              </li>
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  alt="JavaScript" class="skill-icon" />
+                <span>JavaScript</span>
+              </li>
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML"
+                  class="skill-icon" />
+                <span>HTML</span>
+              </li>
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS"
+                  class="skill-icon" />
+                <span>CSS</span>
+              </li>
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Node.js" class="skill-icon" />
+                <span>Python</span>
+              </li>
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
+                  alt="Node.js" class="skill-icon" />
+                <span>Node.js</span>
+              </li>
+              <li class="skill-item">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git"
+                  class="skill-icon" />
+                <span>Git</span>
+              </li>
+            </ul>
+          </article>
+          <article class="flex-col gap-y-default">
+            <h3>Hobbies</h3>
+            <p>Além de programar, gosto de:</p>
+            <ul class="hobbies-list flex gap-x-default">
+              <li class="hobby-item flex align-items-center gap-x-default">
+                <img src="assets/technology.png" alt="Vídeos de tecnologia" class="hobby-icon invert-100" />
+                <span class="font-color-highlight">Assistir vídeos sobre tecnologia<br>
+                  <small class="font-color-primary">Sempre aprendendo sobre novidades e tendências do mundo
+                    tech.</small>
+                </span>
+              </li>
+              <li class="hobby-item flex align-items-center gap-x-default">
+                <img src="assets/finances.png" alt="Finanças" class="hobby-icon invert-100" />
+                <span class="font-color-highlight">Ler sobre finanças<br>
+                  <small class="font-color-primary">Interesse em investimentos e educação financeira.</small>
+                </span>
+              </li>
+              <li class="hobby-item flex align-items-center gap-x-default">
+                <img src="assets/anime.png" alt="Animes" class="hobby-icon invert-100" />
+                <span class="font-color-highlight">Assistir animes<br>
+                  <small class="font-color-primary">Aprecio boas histórias e animações japonesas.</small>
+                </span>
+              </li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="education" class="flex-col gap-y-2default">
+      <article class="self-center flex-col gap-y-default align-items-center justify-center text-center max-w-600">
+        <div class="flex align-items-center gap-x-default">
+          <img src="assets/graduation-cap.svg" alt="Capelo de formatura" class="title-icon" />
+          <h2 class="font-size-2rem font-weight-700 font-color-primary">Formação</h2>
+        </div>
+        <p class="font-size-1rem font-weight-400 font-color-desemphasize">Minha jornada acadêmica, sempre buscando
+          conhecimento e crescimento contínuo.</p>
+      </article>
+
+      <article class="article-layout">
+        <h3 class="font-size-1_5rem font-weight-700 font-color-highlight">Formação Acadêmica</h3>
+        <article class="bg-color-secondary border-rounded p-default">
+          <div class="flex justify-between align-items-center gap-x-default">
+            <h4 class="font-size-1_25rem font-weight-600 font-color-primary">Análise e Desenvolvimento de Sistemas</h4>
+            <div class="flex align-items-center gap-x-0_5default">
+              <img src="assets/calendar-clock.svg" alt="Ícone de calendário em andamento"
+                class="icon-extra-mini icon-color-secondary" />
+              <p class="font-size-1rem font-weight-400 font-color-highlight">Em andamento</p>
+            </div>
+          </div>
+          <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+              src="assets/graduation-cap.svg" alt="Capelo de formatura" class="subtitle-icon" />
+            <p>UNINTER – Centro Universitário Internacional</p>
+          </div>
+          <p class="font-size-1rem font-weight-400 font-color-primary mt-1rem">Formação sólida em fundamentos da
+            computação, algoritmos, estruturas de dados e desenvolvimento de software.</p>
+        </article>
+      </article>
+
+      <article class="article-layout">
+        <h3 class="font-size-1_5rem font-weight-700 font-color-highlight">Cursos Complementares</h3>
+        <ul class="bg-color-secondary border-rounded p-default grid grid-cols-3 gap-default">
+          <li class="course-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React" class="icon-mini" />
+            <p>The Complete Web Development Bootcamp by Angela Yu</p>
+          </li>
+          <li class="course-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React" class="icon-mini" />
+            <p>The WEB DEV Bootcamp with Colt Steele</p>
+          </li>
+          <li class="course-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg"
+              alt="React" class="icon-mini" />
+            <p>React - The Complete Guide by Maximilian Schwarzmüller</p>
+          </li>
+          <li class="course-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+              alt="TypeScript" class="icon-mini" />
+            <p>Mastering TypeScript by Colt Steele</p>
+          </li>
+          <li class="course-item"><img
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+              alt="JavaScript" class="icon-mini" />
+            <p>JavaScript: The Advanced Concepts by Andrei Neagoie</p>
+          </li>
+          <li class="course-item"><img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+              alt="CSS" class="icon-mini" />
+            <p>FreeCodeCamp - Responsive Web Design Certification</p>
+          </li>
+        </ul>
+      </article>
+
+      <article class="article-layout">
+        <h3 class="font-size-1_5rem font-weight-700 font-color-highlight">Idiomas</h3>
+        <ul class="bg-color-secondary border-rounded p-default grid grid-cols-3 gap-default">
+          <li class="language-item"><img src="assets/brazil.svg" class="icon-mini" />
+            <p>Português - Nativo</p>
+          </li>
+          <li class="language-item"><img src="assets/usa.svg" class="icon-mini" />
+            <p>Inglês - Avançado</p>
+          </li>
+          <li class="language-item"><img src="assets/spain.svg" class="icon-mini" />
+            <p>Espanhol - Avançado</p>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="portfolio" class="flex-col gap-y-default align-items-center justify-center">
+      <article class="self-center flex-col gap-y-default align-items-center justify-center text-center max-w-600">
+        <div class="flex align-items-center gap-x-default">
+          <img src="assets/work.svg" alt="Ícone de maleta" class="title-icon" />
+          <h2 class="font-size-2rem font-weight-700 font-color-primary">Portfólio</h2>
+        </div>
+        <p class="font-size-1rem font-weight-400 font-color-desemphasize">Explore minha jornada profissional e os
+          projetos pessoais que demonstram minhas habilidades e paixão pelo desenvolvimento frontend.</p>
+      </article>
+
+      <article class="article-layout">
+        <h3 class="font-size-1_5rem font-weight-700 font-color-highlight">Experiência Profissional</h3>
+        <article class="bg-color-secondary border-rounded p-default flex-col gap-y-default">
+          <div>
+            <div class="flex justify-between align-items-center gap-x-default">
+              <h4 class="font-size-1_25rem font-weight-600 font-color-primary">Senior Frontend Engineer</h4>
+              <div class="flex align-items-center gap-x-0_5default">
+                <img src="assets/calendar-clock.svg" alt="Ícone de calendário em andamento"
+                  class="icon-extra-mini icon-color-secondary" />
+                <p class="font-size-1rem font-weight-400 font-color-highlight">2025 - Atualmente</p>
+              </div>
+            </div>
+            <div class="flex align-items-center gap-x-default">
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/work.svg" alt="Ícone de maleta" class="subtitle-icon" />
+                <p>Capgemini</p>
+              </div>
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/location.svg" alt="Ícone de pin de localização" class="subtitle-icon" />
+                <p>Madrid, Espanha</p>
+              </div>
+            </div>
+          </div>
+          <p class="font-size-1rem font-weight-300 font-color-primary">Atuação em um projeto internacional de
+            implementação de sistemas internos para uma instituição financeira europeia. Responsável por mentorar
+            desenvolvedores juniores e plenos, desenvolver funcionalidades do MVP, estimar tarefas e participar de
+            discussões técnicas.</p>
+          <div class="flex-col gap-y-0_5default">
+            <h5 class="font-size-1rem font-weight-600 font-color-highlight">Tecnologias</h5>
+            <ul class="flex gap-x-default">
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                  class="icon-extra-mini" />
+                <span>React</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript" class="icon-extra-mini" />
+                <span>TypeScript</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/sass/sass-original.svg" alt="SASS"
+                  class="icon-extra-mini" />
+                <span>SASS</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="bg-color-secondary border-rounded p-default flex-col gap-y-default">
+          <div>
+            <div class="flex justify-between align-items-center gap-x-default">
+              <h4 class="font-size-1_25rem font-weight-600 font-color-primary">Senior Frontend Engineer</h4>
+              <div class="flex align-items-center gap-x-0_5default">
+                <img src="assets/calendar-check.svg" alt="Ícone de calendário concluído"
+                  class="icon-extra-mini icon-color-secondary" />
+                <p class="font-size-1rem font-weight-400 font-color-highlight">2024 - 2025</p>
+              </div>
+            </div>
+            <div class="flex align-items-center gap-x-default">
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/work.svg" alt="Ícone de maleta" class="subtitle-icon" />
+                <p>Dcycle</p>
+              </div>
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/location.svg" alt="Ícone de pin de localização" class="subtitle-icon" />
+                <p>Madrid, Espanha</p>
+              </div>
+            </div>
+          </div>
+          <p class="font-size-1rem font-weight-300 font-color-primary">Liderança em iniciativas frontend dentro de um
+            squad de produto multidisciplinar, com impacto direto em indicadores estratégicos do negócio.</p>
+          <div class="flex-col gap-y-0_5default">
+            <h5 class="font-size-1rem font-weight-600 font-color-highlight">Tecnologias</h5>
+            <ul class="flex gap-x-default">
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                  class="icon-extra-mini" />
+                <span>React</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript" class="icon-extra-mini" />
+                <span>TypeScript</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="TailwindCSS" class="icon-extra-mini" />
+                <span>TailwindCSS</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg"
+                  alt="Python" class="icon-extra-mini" />
+                <span>Python</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/fastapi/fastapi-original.svg"
+                  alt="FastAPI" class="icon-extra-mini" />
+                <span>FastAPI</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="bg-color-secondary border-rounded p-default flex-col gap-y-default">
+          <div>
+            <div class="flex justify-between align-items-center gap-x-default">
+              <h4 class="font-size-1_25rem font-weight-600 font-color-primary">Frontend Engineer</h4>
+              <div class="flex align-items-center gap-x-0_5default">
+                <img src="assets/calendar-check.svg" alt="Ícone de calendário concluído"
+                  class="icon-extra-mini icon-color-secondary" />
+                <p class="font-size-1rem font-weight-400 font-color-highlight">2022 - 2024</p>
+              </div>
+            </div>
+            <div class="flex align-items-center gap-x-default">
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/work.svg" alt="Ícone de maleta" class="subtitle-icon" />
+                <p>Flat 101</p>
+              </div>
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/location.svg" alt="Ícone de pin de localização" class="subtitle-icon" />
+                <p>Madrid, Espanha</p>
+              </div>
+            </div>
+          </div>
+          <p class="font-size-1rem font-weight-300 font-color-primary">Desenvolvimento e manutenção de sistemas internos
+            de gestão para um cliente do setor hoteleiro, com foco na melhoria de processos de negócios por meio de
+            soluções escaláveis.</p>
+          <div class="flex-col gap-y-0_5default">
+            <h5 class="font-size-1rem font-weight-600 font-color-highlight">Tecnologias</h5>
+            <ul class="flex gap-x-default">
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                  class="icon-extra-mini" />
+                <span>React</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
+                  alt="Next.js" class="icon-extra-mini" />
+                <span>Next.js</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript" class="icon-extra-mini" />
+                <span>TypeScript</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="TailwindCSS" class="icon-extra-mini" />
+                <span>
+                  TailwindCSS
+                </span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
+                  alt="Node.js" class="icon-extra-mini" />
+                <span>Node.js</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+        <article class="bg-color-secondary border-rounded p-default flex-col gap-y-default">
+          <div>
+            <div class="flex justify-between align-items-center gap-x-default">
+              <h4 class="font-size-1_25rem font-weight-600 font-color-primary">Junior Frontend Engineer</h4>
+              <div class="flex align-items-center gap-x-0_5default">
+                <img src="assets/calendar-check.svg" alt="Ícone de calendário concluído"
+                  class="icon-extra-mini icon-color-secondary" />
+                <p class="font-size-1rem font-weight-400 font-color-highlight">2021 - 2022</p>
+              </div>
+            </div>
+            <div class="flex align-items-center gap-x-default">
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/work.svg" alt="Ícone de maleta" class="subtitle-icon" />
+                <p>Freelance</p>
+              </div>
+              <div class="article-data-layout font-size-1rem font-weight-400 font-color-desemphasize"><img
+                  src="assets/location.svg" alt="Ícone de pin de localização" class="subtitle-icon" />
+                <p>Madrid, Espanha</p>
+              </div>
+            </div>
+          </div>
+          <p class="font-size-1rem font-weight-300 font-color-primary">Desenvolvimento do frontend de um sistema interno
+            de gestão de vendas e estoque para uma empresa varejista do setor de móveis, otimizando a operação e
+            reduzindo erros manuais.</p>
+          <div class="flex-col gap-y-0_5default">
+            <h5 class="font-size-1rem font-weight-600 font-color-highlight">Tecnologias</h5>
+            <ul class="flex gap-x-default">
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React"
+                  class="icon-extra-mini" />
+                <span>React</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"
+                  alt="TypeScript" class="icon-extra-mini" />
+                <span>TypeScript</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
+                  alt="TailwindCSS" class="icon-extra-mini" />
+                <span>
+                  TailwindCSS
+                </span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg"
+                  alt="Node.js" class="icon-extra-mini" />
+                <span>Node.js</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg"
+                  alt="Express" class="icon-extra-mini" />
+                <span>Express</span>
+              </li>
+              <li class="experience-technology-tag">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg"
+                  alt="Firebase" class="icon-extra-mini" />
+                <span>Firebase</span>
+              </li>
+            </ul>
+          </div>
+        </article>
+      </article>
+
+      <article class="article-layout">
+        <h3 class="font-size-1_5rem font-weight-700 font-color-highlight">Projetos Pessoais</h3>
+        <ul class="bg-color-secondary border-rounded p-default grid grid-cols-2 gap-default">
+          <li class="project-item">
+            <img src="assets/e-commerce.gif" alt="E-commerce" class="gif" />
+            <div class="flex-col gap-y-0_5default flex-grow">
+              <div class="flex align-items-center justify-between">
+                <h4 class="font-size-1_25rem font-weight-600 font-color-primary">E-Commerce</h4>
+                <a href="https://github.com/vincorreia/e-commerce" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="GitHub Icon" class="icon-mini invert-100" />
+                </a>
+              </div>
+              <p class="font-size-1rem font-weight-400 font-color-desemphasize">Um exemplo de aplicativo de e-commerce
+                feito com React, Express e Firebase.</p>
+            </div>
+          </li>
+          <li class="project-item">
+            <img src="assets/todo-list.gif" alt="Todo-list" class="gif" />
+            <div class="flex-col gap-y-0_5default flex-grow">
+              <div class="flex align-items-center justify-between">
+                <h4 class="font-size-1_25rem font-weight-600 font-color-primary">Todo-list</h4>
+                <a href="https://github.com/vincorreia/t3-todo" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="GitHub Icon" class="icon-mini invert-100" />
+                </a>
+              </div>
+              <p class="font-size-1rem font-weight-400 font-color-desemphasize">Um gerador de listas de tarefas feito
+                com a T3 Stack.</p>
+            </div>
+          </li>
+          <li class="project-item">
+            <img src="assets/portfolio.gif" alt="Portfolio" class="gif" />
+            <div class="flex-col gap-y-0_5default flex-grow">
+              <div class="flex align-items-center justify-between">
+                <h4 class="font-size-1_25rem font-weight-600 font-color-primary">Portfolio</h4>
+                <a href="https://github.com/vincorreia/portfolio-revamp" target="_blank" rel="noopener noreferrer">
+                  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/github/github-original.svg"
+                    alt="GitHub Icon" class="icon-mini invert-100" />
+                </a>
+              </div>
+              <p class="font-size-1rem font-weight-400 font-color-desemphasize">O meu portfolio utilizado anteriormente
+              </p>
+            </div>
+          </li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="contact" class="flex-col gap-y-default align-items-center justify-center">
+      <article class="self-center flex-col gap-y-default align-items-center justify-center text-center max-w-600">
+        <div class="flex align-items-center gap-x-default">
+          <img src="assets/contact.svg" alt="Ícone de contato" class="title-icon" />
+          <h2 class="font-size-2rem font-weight-700 font-color-primary">Contato</h2>
+        </div>
+        <p class="font-size-1rem font-weight-400 font-color-desemphasize">
+          Estou sempre aberto a novas oportunidades e colaborações. Se você tem um projeto interessante ou apenas quer
+          dizer olá, sinta-se à vontade para entrar em contato comigo preenchendo o formulário abaixo.
+        </p>
+      </article>
+      <form id="contact-form" class="contact-form">
+        <div class="form-group">
+          <label for="name" class="form-label">
+            Nome
+          </label>
+          <input type="text" id="name" name="name" class="form-input" placeholder="Seu nome completo" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email" class="form-label">
+            Email
+          </label>
+          <input type="email" id="email" name="email" class="form-input" placeholder="seu.email@exemplo.com" required />
+        </div>
+
+        <div class="form-group">
+          <label for="message" class="form-label">
+            Mensagem
+          </label>
+          <textarea id="message" name="message" class="form-textarea"
+            placeholder="Conte-me sobre seu projeto, ideia ou apenas diga olá..." required></textarea>
+        </div>
+
+        <button type="submit" class="submit-button">
+          Enviar Mensagem
+        </button>
+      </form>
+    </section>
+
+  </main>
+  <footer>
+    <p>&copy; 2025 Vinnicius Correia</p>
+  </footer>
+</body>
+
+</html>

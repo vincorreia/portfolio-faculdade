@@ -1,0 +1,25 @@
+/* Definir variáveis, scroll behavior e font size (que será o 1 rem) */
+
+:root {
+  font-size: 16px;
+  --font-family: "Inter", sans-serif;
+  --default-gap: 1rem;
+  --default-padding: 1rem;
+  --color-primary: black;
+  --color-secondary: oklch(21% 0.034 264.665);
+  --color-desemphasize: #1e2939;
+  --color-highlight: #00d492;
+  --color-highlight-assistant: #10b9814d;
+  --color-input-bg: #00000080;
+  --filter-color-secondary: invert(59%) sepia(98%) saturate(1419%)
+    hue-rotate(114deg) brightness(94%) contrast(102%);
+  --filter-color-desemphasize: invert(77%) sepia(9%) saturate(418%)
+    hue-rotate(180deg) brightness(83%) contrast(87%);
+  --font-color-primary: white;
+  --font-color-secondary: rgb(21 128 61);
+  --font-color-highlight: #00d492;
+  --font-color-desemphasize: #99a1af;
+  --font-color-placeholder: #9ca3afb3;
+  scroll-behavior: smooth;
+  scroll-padding: 15svh;
+}

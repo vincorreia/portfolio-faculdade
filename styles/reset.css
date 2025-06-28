@@ -1,0 +1,28 @@
+/* limpar todo o css da aplicaçao para nao atrapalhar no desenvolvimento antes de começar a definir as classes, também definir alguns default para o body */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+body {
+  font-family: var(--font-family, "Inter"), sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--font-color-primary, white);
+  background-color: var(--color-primary);
+  min-height: 100svh;
+  position: relative;
+}

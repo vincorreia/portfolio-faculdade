@@ -1,0 +1,18 @@
+.course-item {
+  background-color: var(--color-desemphasize);
+  border-radius: 0.5rem;
+  padding-block: calc(var(--default-padding) * 0.5);
+  padding-inline: var(--default-padding);
+  display: flex;
+  align-items: center;
+  gap: var(--default-gap);
+}
+
+.language-item {
+  background-color: var(--color-desemphasize);
+  border-radius: 0.5rem;
+  padding: var(--default-padding);
+  display: flex;
+  align-items: center;
+  gap: var(--default-gap);
+}

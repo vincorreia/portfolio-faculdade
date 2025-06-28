@@ -1,0 +1,21 @@
+.experience-technology-tag {
+  background-color: var(--color-desemphasize);
+  border-radius: 1rem;
+  padding: calc(var(--default-padding) * 0.25)
+    calc(var(--default-padding) * 0.75);
+  font-size: 0.875rem;
+  font-weight: 400;
+  color: var(--font-color-primary);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.project-item {
+  background-color: var(--color-desemphasize);
+  border-radius: 0.5rem;
+  padding-block: calc(var(--default-padding) * 0.5);
+  padding-inline: var(--default-padding);
+  display: flex;
+  gap: var(--default-gap);
+}

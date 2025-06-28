@@ -1,0 +1,65 @@
+/* apenas classes reutilizáveis relacionadas a fonte */
+.font-size-10rem {
+  font-size: 10rem;
+}
+.font-size-8rem {
+  font-size: 8rem;
+}
+.font-size-6rem {
+  font-size: 6rem;
+}
+.font-size-4rem {
+  font-size: 4rem;
+}
+.font-size-3rem {
+  font-size: 3rem;
+}
+.font-size-2rem {
+  font-size: 2rem;
+}
+
+.font-size-1_75rem {
+  font-size: 1.75rem;
+}
+
+.font-size-1_5rem {
+  font-size: 1.5rem;
+}
+
+.font-size-1_25rem {
+  font-size: 1.25rem;
+}
+
+.font-size-1rem {
+  font-size: 1rem;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+.font-weight-600 {
+  font-weight: 600;
+}
+.font-weight-700 {
+  font-weight: 700;
+}
+
+.font-color-primary {
+  color: var(--font-color-primary);
+}
+
+.font-color-secondary {
+  color: var(--font-color-secondary);
+}
+
+.font-color-highlight {
+  color: var(--font-color-highlight);
+}
+
+.font-color-desemphasize {
+  color: var(--font-color-desemphasize);
+}
